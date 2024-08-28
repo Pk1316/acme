@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://Mahesh:Mahe9041@acme.rdqhpu0.mongodb.net/ACME');
+const username = "username";//edit here
+const password = "user password"; //edit here
+
+mongoose.connect(`mongodb+srv://${username}:${password}@acme.rdqhpu0.mongodb.net/ACME`);
 
 const userSchema = mongoose.Schema({
     username:
